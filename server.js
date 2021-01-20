@@ -70,5 +70,7 @@ app.delete("/collection/:collectionName/:id", (req, res, next) => {
   });
 });
 
-app.listen(3000);
-console.log("Running on 3k")
+const port = process.env.PORT || 3000
+
+app.listen(port);
+console.log("Running on 3k" & port)
